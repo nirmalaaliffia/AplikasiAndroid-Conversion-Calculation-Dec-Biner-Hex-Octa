@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashscreen"
+    android:background="@color/colorPrimary" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp">
+
+        <ImageView
+            android:id="@+id/imageViewSplash"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:src="@drawable/convertlogo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="120dp" />
+
+        <TextView
+            android:id="@+id/textViewSplash"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Numbering Conversion"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="317dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

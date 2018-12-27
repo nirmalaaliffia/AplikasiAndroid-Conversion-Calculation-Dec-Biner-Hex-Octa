@@ -1,0 +1,175 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="486dp"
+
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Masukkan nilai yang ingin di konversikan"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinConversionSelection"
+            android:layout_width="345dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/Convert"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/decView"
+                android:layout_width="3dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:text="DECIMAL"
+                android:textColor="@color/colorDec"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/decText"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Nilai..."
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/binView"
+                android:layout_width="3dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:text="BINARY"
+                android:textColor="@color/colorDec"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/binText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Nilai..."
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hexView"
+                android:layout_width="3dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:text="HEXADECIMAL"
+                android:textColor="@color/colorDec"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/hexText"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:text="Nilai..."
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/oktoView"
+                android:layout_width="3dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:text="OKTODECIMAL"
+                android:textColor="@color/colorDec"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/oktalText"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Nilai..."
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnconvert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorDec"
+                android:text="CONVERTER"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/btncalcu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="CALCULATION"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

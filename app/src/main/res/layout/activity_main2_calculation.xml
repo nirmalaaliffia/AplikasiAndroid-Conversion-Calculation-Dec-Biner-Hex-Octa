@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Main2ActivityCalculation"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="486dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Spinner
+
+                android:id="@+id/spinnercalcu1"
+                android:layout_width="81dp"
+                android:layout_height="39dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/calcu1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Masukkan Nilai" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnercalcu2"
+                android:layout_width="81dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/calcu2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Masukkan Nilai" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_weight="1"
+                    android:text="x"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonBagi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_weight="1"
+                    android:text="/"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/buttonMod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_weight="1"
+                    android:text="%"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hasiljudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Hasil Calculation"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/hasilView"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginTop="15dp"
+                android:text="Hasil..."
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnconvert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorDec"
+                android:text="CONVERTER"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btncalcu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="CALCULATION"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
